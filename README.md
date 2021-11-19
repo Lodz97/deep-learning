@@ -68,10 +68,18 @@ The goal of this challenge is to solve a visual question answering (VQA) problem
 <div align="center">
 <p float="center">
     <img src="https://drive.google.com/uc?export=view&id=1llGT5tGbx7qiAnPJmQfTrwH2rWD7b3N8" width="400" alt="Question image 1"/>
-    <img src="https://drive.google.com/uc?export=view&id=1DCgQQTiOWD1tPSGFlZxjrdsUJtA9SUMD" width="400" alt="Question image 2"/>
+    <figcaption>Q: Is the man's shirt blue?  &emsp;A: yes        </figcaption>
+
 </p>
 </div>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Q: Is the man's shirt blue? &emsp; A: yes      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   Q: How many bikes?! &emsp; A: 1
+
+<div align="center">
+<p float="center">
+    <img src="https://drive.google.com/uc?export=view&id=1DCgQQTiOWD1tPSGFlZxjrdsUJtA9SUMD" width="400" alt="Question image 2"/>
+    <figcaption>    Q: How many bikes?! &emsp; A: 1</figcaption>
+</p>
+</div>
+
 <p></p>
 
 For the VQA problem, our approach was to pass the two inputs, the image and the question, to two differents nets and then merge the two latent representations with concatenation to make the final prediction. For the image we tried different nets, and at the end InceptionResNetV2 resulted in the best performance. For the questions, first we embedded them and then we used a two layers LSTM to extract features. After the concatenation we used fully connected layers and a softmax for final prediction. We fine tuned various hyperparameters like embedding size, number of LSTM layers and dropout rate. We had to resize the images so that the entire training set could fit in our RAM. We achieved 0.61503 accuracy in test.
