@@ -19,7 +19,12 @@ Remember that the notebooks have not the goal to be runned as they are here, but
 ## Image Classification
 [![Kaggle](https://img.shields.io/badge/open-kaggle-blue)](https://www.kaggle.com/c/artificial-neural-networks-and-deep-learning-2020/leaderboardn)
 
-The goal of this challenge is to build the best model to solve an image classification problem. The challenge required to classify images depicting groups of people based on the number of masked people. In the specific, solution must discriminate between images depending on the following cases: 1) All the people in the image are wearing a mask, 2) No person in the image is wearing a mask, 3) Someone in the image is not wearing a mask. The dataset consists in 5614 training examples; additional 450 images are provided to compute the final predictions to submit to Kaggle. The evaluation metric is multiclass accuracy.
+The goal of this challenge is to build the best model to solve an image classification problem. The challenge required to classify images depicting groups of people based on the number of masked people. In the specific, solution must discriminate between images depending on the following cases: 
+1.  All the people in the image are wearing a mask 
+2.  No person in the image is wearing a mask 
+3.  Someone in the image is not wearing a mask
+    
+The dataset consists in 5614 training examples; additional 450 images are provided to compute the final predictions to submit to Kaggle. The evaluation metric is multiclass accuracy.
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1oKcrfNOhHPXYiTYkqXUgrYMpoZaaIX30" width="400" alt="Masks"/>
