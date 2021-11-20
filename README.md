@@ -17,7 +17,7 @@ Remember that the notebooks have not the goal to be runned as they are here, but
 
 
 ## Image Classification
-[![Kaggle](https://img.shields.io/badge/open-kaggle-blue)](https://www.kaggle.com/c/artificial-neural-networks-and-deep-learning-2020/leaderboardn)
+[![Kaggle](https://img.shields.io/badge/open-kaggle-blue)](https://www.kaggle.com/c/artificial-neural-networks-and-deep-learning-2020/)
 
 The goal of this challenge is to build the best model to solve an image classification problem. The challenge required to classify images depicting groups of people based on the number of masked people. In the specific, solution must discriminate between images depending on the following cases: 
 1.  All the people in the image are wearing a mask 
